@@ -1,9 +1,9 @@
 {
-  "name": "@getinapp/next-boilerplate",
+  "name": "lulapalooza",
   "version": "0.1.0",
   "author": {
-    "name": "Maganez Filho",
-    "email": "maganezfilho@gmail.com"
+    "name": "Wendel Freitas",
+    "email": "wendelfreitasbranco@gmail.com"
   },
   "private": true,
   "scripts": {
@@ -23,6 +23,7 @@
     "nprogress": "^0.2.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-lottie": "^1.2.3",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
@@ -41,6 +42,7 @@
     "@types/node": "17.0.19",
     "@types/nprogress": "^0.2.0",
     "@types/react": "17.0.39",
+    "@types/react-lottie": "^1.2.6",
     "@types/styled-components": "^5.1.23",
     "@typescript-eslint/eslint-plugin": "^5.12.1",
     "@typescript-eslint/parser": "^5.12.1",

@@ -1,21 +1,16 @@
+import { Header } from 'components/Header';
 import { useThemeContext } from 'context/ThemeContext';
-import Head from 'next/head';
+import * as animationData from '../../public/lulapalooza.json';
+import { Introduction } from 'components/Introduction';
+import { Content } from 'components/Content';
 
 function Home() {
-  const { toggleTheme } = useThemeContext();
-
   return (
     <>
-      <Head>
-        <title>Home | Next Boilerplate</title>
-      </Head>
-
+      <Header />
       <main>
-        <p>Hello World!</p>
-
-        <button type='button' onClick={toggleTheme}>
-          Switch theme
-        </button>
+        <Introduction />
+        <Content />
       </main>
     </>
   );

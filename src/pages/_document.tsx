@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Html, Main, Head, NextScript } from 'next/document';
 
 export default class MyDocument extends Document {
   render() {
@@ -7,7 +7,15 @@ export default class MyDocument extends Document {
         <Head>
           <meta charSet='UTF-8' />
           <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
-          <meta name='viewport' content='viewport-fit=cover' />
+          <link
+            rel='preconnect'
+            href='https://fonts.gstatic.com'
+            crossOrigin=''
+          />
+          <link
+            href='https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap'
+            rel='stylesheet'
+          />
 
           <link rel='shortcut icon' href='/favicon.ico' type='image/ico' />
 
@@ -17,7 +25,7 @@ export default class MyDocument extends Document {
           <meta property='og:site_name' content='Next Boilerplate' />
 
           {/* Primary Meta Tags */}
-          <meta name='title' content='Next Boilerplate - Website' />
+          <meta name='title' content='Lulapalooza' />
           <meta
             name='description'
             content='Hello World! Welcome to my Next Boilerplate website.'
@@ -59,8 +67,7 @@ export default class MyDocument extends Document {
           />
 
           <link rel='canonical' href='https://next-boilerplate-url-here.com' />
-        </Head>
-
+        </Head>{' '}
         <body>
           <Main />
           <NextScript />

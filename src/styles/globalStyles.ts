@@ -34,7 +34,7 @@ export default createGlobalStyle`${css`
   }
 
   body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 1.6rem;
     line-height: 1.4rem;
 

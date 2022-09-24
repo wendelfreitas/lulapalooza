@@ -2,6 +2,6 @@ import { Theme } from './types';
 
 export const lightTheme: Theme = {
   name: 'light',
-  primaryColor: '#0288d1',
-  backgroundColor: '#ECEEFF',
+  primaryColor: '#000',
+  backgroundColor: '#9ecdd4',
 };

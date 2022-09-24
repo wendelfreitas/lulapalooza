@@ -8,4 +8,8 @@ export default {
   component: Box,
 } as Meta;
 
-export const Default: Story<BoxProps> = () => <Box />;
+export const Default: Story<BoxProps> = () => (
+  <Box color='red' size='50%'>
+    <p>Hello</p>
+  </Box>
+);

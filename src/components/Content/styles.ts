@@ -44,7 +44,7 @@ export const BalloonContainer = styled.div`
 export const BoxWrapper = styled.section`
   display: flex;
   justify-content: space-between;
-  margin-top: 5.15rem;
+  margin-top: 2.5rem;
 `;
 
 export const PinkBox = styled(Box)`
@@ -106,4 +106,8 @@ export const YellowBox = styled(Box)`
     line-height: 5rem;
     max-width: 25rem;
   }
+`;
+
+export const BlackBox = styled(Box)`
+  margin-top: 2.5rem;
 `;

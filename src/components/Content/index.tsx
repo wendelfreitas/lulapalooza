@@ -2,6 +2,11 @@ import React from 'react';
 import Lottie from 'react-lottie';
 import { CardLink } from '../../components/CardLink';
 import * as animationData from '../../../public/photo.json';
+import * as salsageJson from '../../../public/salsage.json';
+import * as discJson from '../../../public/disc.json';
+import * as nightJson from '../../../public/night.json';
+import * as hotelJson from '../../../public/hotel.json';
+import * as merchJson from '../../../public/merch.json';
 
 import * as S from './styles';
 import { Footer } from 'components/Footer';
@@ -11,6 +16,51 @@ export const Content = () => {
     loop: true,
     autoplay: true,
     animationData,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    },
+  };
+
+  const lottieSalsage = {
+    loop: true,
+    autoplay: true,
+    animationData: salsageJson,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    },
+  };
+
+  const lottieDisc = {
+    loop: true,
+    autoplay: true,
+    animationData: discJson,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    },
+  };
+
+  const lottieHotel = {
+    loop: true,
+    autoplay: true,
+    animationData: hotelJson,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    },
+  };
+
+  const lottieMerch = {
+    loop: true,
+    autoplay: true,
+    animationData: merchJson,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    },
+  };
+
+  const lottieNight = {
+    loop: true,
+    autoplay: true,
+    animationData: nightJson,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
     },
@@ -80,7 +130,7 @@ export const Content = () => {
 
         <S.BoxWrapper>
           <S.PinkBox color='#ff40b4' size='48.5%'>
-            <ImportantBalloon />
+            <Lottie options={lottieSalsage} height='30rem' width='30rem' />
             <p>
               Vamos realizar a doação de caixas de BIS para as crianças da
               AELESAB
@@ -91,7 +141,7 @@ export const Content = () => {
             </b>
           </S.PinkBox>
           <S.PurpleBox color='#ff40b4' size='48.5%'>
-            <Lottie options={defaultOptions} height='30rem' width='30rem' />
+            <Lottie options={lottieDisc} height='30rem' width='30rem' />
             <h3>TIRE MUITAS FOTOS</h3>
             <p>
               Marque a gente no instagram e use #lulapalooza e a
@@ -99,10 +149,12 @@ export const Content = () => {
             </p>
           </S.PurpleBox>
         </S.BoxWrapper>
-
+        <S.BlackBox color='black' size='100%'>
+          <Lottie options={lottieNight} height='30rem' width='30rem' />
+        </S.BlackBox>
         <S.BoxWrapper>
-          <S.PinkBox color='#7118d7' size='48.5%'>
-            <ImportantBalloon />
+          <S.PurpleBox color='#7118d7' size='48.5%'>
+            <Lottie options={lottieMerch} height='30rem' width='30rem' />
             <p>
               Vamos realizar a doação de caixas de BIS para as crianças da
               AELESAB
@@ -111,9 +163,9 @@ export const Content = () => {
               PORÉM SE VOCÊ QUISER NOS PRESENTEAR COM UM PIX, É SEMPRE
               BEM-VINDO.
             </b>
-          </S.PinkBox>
+          </S.PurpleBox>
           <S.PurpleBox color='#7118d7' size='48.5%'>
-            <Lottie options={defaultOptions} height='30rem' width='30rem' />
+            <Lottie options={lottieHotel} height='30rem' width='30rem' />
             <h3>TIRE MUITAS FOTOS</h3>
             <p>
               Marque a gente no instagram e use #lulapalooza e a

@@ -19,45 +19,42 @@ export default class MyDocument extends Document {
 
           <link rel='shortcut icon' href='/favicon.ico' type='image/ico' />
 
-          {/* OG Tags */}
-          <meta name='theme-color' content='#101D42' />
-          <meta property='og:locale' content='pt-br' />
-          <meta property='og:site_name' content='Next Boilerplate' />
-
-          {/* Primary Meta Tags */}
-          <meta name='title' content='Lulapalooza' />
+          <title>Lulapalooza - Oct 1-2, Chacára, Bauru</title>
+          <meta name='title' content='Lulapalooza - Oct 1-2, Chacára, Bauru' />
           <meta
             name='description'
-            content='Hello World! Welcome to my Next Boilerplate website.'
+            content='Finalmente o aniversário da Bia e do Gui está chegando! O Lulapalooza está cheio de atrações para que o nosso sábado seja incrível!'
           />
 
-          {/* Open Graph / Facebook METADATA */}
-          <meta property='og:type' content='Next Boilerplate Website' />
+          <meta property='og:type' content='website' />
+          <meta property='og:url' content='https://metatags.io/' />
           <meta
-            property='og:url'
-            content='https://next-boilerplate-url-here.com'
+            property='og:title'
+            content='Lulapalooza - Oct 1-2, Chacára, Bauru'
           />
-          <meta property='og:title' content='Next Boilerplate - Website' />
           <meta
             property='og:description'
-            content='Hello World! Welcome to my Next Boilerplate website.'
+            content='Finalmente o aniversário da Bia e do Gui está chegando! O Lulapalooza está cheio de atrações para que o nosso sábado seja incrível!'
           />
-
-          <meta property='og:image' content='/metadata-image.png' />
-
-          {/* Twitter METADATA */}
-          <meta property='twitter:card' content='summary_large_image' />
           <meta
-            property='twitter:url'
-            content='https://next-boilerplate-url-here.com'
+            property='og:image'
+            content='https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png'
           />
-          <meta property='twitter:title' content='Next Boilerplate - Website' />
+
+          <meta property='twitter:card' content='summary_large_image' />
+          <meta property='twitter:url' content='https://metatags.io/' />
+          <meta
+            property='twitter:title'
+            content='Lulapalooza - Oct 1-2, Chacára, Bauru'
+          />
           <meta
             property='twitter:description'
-            content='Hello World! Welcome to my Next Boilerplate website.'
+            content='Finalmente o aniversário da Bia e do Gui está chegando! O Lulapalooza está cheio de atrações para que o nosso sábado seja incrível!'
           />
-
-          <meta property='twitter:image' content='/metadata-image.png' />
+          <meta
+            property='twitter:image'
+            content='https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png'
+          />
 
           <link
             rel='apple-touch-icon'
@@ -66,8 +63,8 @@ export default class MyDocument extends Document {
             title='favicon'
           />
 
-          <link rel='canonical' href='https://next-boilerplate-url-here.com' />
-        </Head>{' '}
+          <link rel='canonical' href='https://lulapalooza.com' />
+        </Head>
         <body>
           <Main />
           <NextScript />

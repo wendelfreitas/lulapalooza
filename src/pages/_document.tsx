@@ -27,7 +27,7 @@ export default class MyDocument extends Document {
           />
 
           <meta property='og:type' content='website' />
-          <meta property='og:url' content='https://metatags.io/' />
+          <meta property='og:url' content='https://lulapalooza.com/' />
           <meta
             property='og:title'
             content='Lulapalooza - Oct 1-2, Chacára, Bauru'
@@ -36,10 +36,7 @@ export default class MyDocument extends Document {
             property='og:description'
             content='Finalmente o aniversário da Bia e do Gui está chegando! O Lulapalooza está cheio de atrações para que o nosso sábado seja incrível!'
           />
-          <meta
-            property='og:image'
-            content='https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png'
-          />
+          <meta property='og:image' content='https://i.imgur.com/UtoGJW0.png' />
 
           <meta property='twitter:card' content='summary_large_image' />
           <meta property='twitter:url' content='https://metatags.io/' />
@@ -53,7 +50,7 @@ export default class MyDocument extends Document {
           />
           <meta
             property='twitter:image'
-            content='https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png'
+            content='https://i.imgur.com/UtoGJW0.png'
           />
 
           <link

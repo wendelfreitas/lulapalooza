@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 
 export const Container = styled.header`
   position: fixed;
@@ -20,4 +21,12 @@ export const Container = styled.header`
     font-size: 1.6rem;
     margin-bottom: 1.5rem;
   }
+
+  ${media.lessThan('medium')`
+    display: none;
+
+    > div {
+      display: none;
+    }
+  `}
 `;

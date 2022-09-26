@@ -9,14 +9,16 @@ export type FooterProps = {
 export const Footer = () => {
   return (
     <S.Container>
-      <SeeYou />
+      <div>
+        <SeeYou />
+      </div>
       <img src='https://assets-global.website-files.com/5e927ba01e4ad56ae5465eb8/6290c2c39a21b270dfb3d32d_Footer%20(1).svg' />
     </S.Container>
   );
 };
 
 const SeeYou = () => (
-  <svg xmlns='http://www.w3.org/2000/svg' width='483' height='633' fill='none'>
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 650' fill='none'>
     <g clipPath='url(#A)'>
       <path
         fill='#fd0'

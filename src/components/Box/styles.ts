@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 import { BoxProps } from '.';
 
 export const Container = styled.div<BoxProps>`
@@ -8,4 +9,9 @@ export const Container = styled.div<BoxProps>`
   height: 60rem;
   width: ${({ size }) => size};
   background-color: ${({ color }) => color};
+
+  ${media.lessThan('small')`
+    margin-top: 1rem;
+    width: 100%;
+  `}
 `;

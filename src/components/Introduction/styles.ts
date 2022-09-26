@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 
 export const Explanation = styled.p`
   text-align: center;
@@ -9,14 +10,33 @@ export const Explanation = styled.p`
 `;
 
 export const Container = styled.section`
-  padding-top: 21.5rem;
+  padding-top: 20.5rem;
 
   img {
+    width: 90rem;
+    height: 20rem;
   }
 
   div {
     position: relative;
+    margin-bottom: 5rem;
   }
+
+  ${media.lessThan('small')`
+    padding-top: 0;
+    div {
+      margin-bottom: 5rem;
+    }
+
+    img {
+      margin-top: 2rem;
+      width: 30rem;
+      height: 10rem;
+    }
+
+    width:100%;
+
+  `}
 `;
 
 export const LogoContainer = styled.div`
@@ -28,4 +48,14 @@ export const LogoContainer = styled.div`
   top: 0;
   margin-top: -38.5rem;
   width: 70rem;
+
+  ${media.lessThan('small')`
+   align-items: center;
+   justify-content: center;
+   display: flex;
+
+    width:100%;
+    margin-top: -13.5rem;
+
+  `}
 `;

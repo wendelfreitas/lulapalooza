@@ -1,4 +1,5 @@
 import { Box } from '../../components/Box';
+import media from 'styled-media-query';
 import styled from 'styled-components';
 
 export const Explanation = styled.p`
@@ -13,6 +14,10 @@ export const Wrapper = styled.section`
   align-items: center;
   flex-direction: column;
   justify-content: center;
+
+  ${media.lessThan('medium')`
+    width: 100%;
+  `}
 `;
 
 export const Container = styled.div`
@@ -22,6 +27,12 @@ export const Container = styled.div`
   div {
     position: relative;
   }
+
+  ${media.lessThan('medium')`
+    width: 100%;
+    padding: 1rem;
+
+  `}
 `;
 
 export const BalloonContainer = styled.div`
@@ -39,12 +50,33 @@ export const BalloonContainer = styled.div`
     text-align: center;
     line-height: 6rem;
   }
+
+  ${media.lessThan('small')`
+    svg {
+      width:50rem;
+    }
+
+    margin: -10rem 0;
+
+    p {
+      position: absolute;
+      font-size: 4rem;
+      font-weight: 500;
+      max-width: 25rem;
+      text-align: center;
+      line-height: 4rem;
+    }
+  `}
 `;
 
 export const BoxWrapper = styled.section`
   display: flex;
   justify-content: space-between;
   margin-top: 2.5rem;
+  ${media.lessThan('small')`
+    flex-direction: column;
+
+  `}
 `;
 
 export const PinkBox = styled(Box)`
@@ -66,12 +98,31 @@ export const PinkBox = styled(Box)`
     line-height: 3.5rem;
     font-size: 3.5rem;
   }
+
+  h3 {
+    font-size: 5rem;
+  }
+
+  ${media.lessThan('small')`
+    width: 100%;
+    h3 {
+      line-height: 5rem;
+      text-align: center;
+
+    }
+  `}
 `;
 
 export const PurpleBox = styled(Box)`
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  h4 {
+    margin: 2rem 0;
+    font-size: 4.25rem;
+    text-align: center;
+  }
 
   color: white;
 
@@ -86,6 +137,17 @@ export const PurpleBox = styled(Box)`
     text-align: center;
     line-height: 2.5rem;
   }
+
+  ${media.lessThan('small')`
+    h3 {
+      margin: 2rem 0;
+      font-size: 4rem;
+    }
+
+    h4 {
+      line-height: 5rem;
+    }
+  `}
 `;
 
 export const YellowBox = styled(Box)`
@@ -110,4 +172,31 @@ export const YellowBox = styled(Box)`
 
 export const BlackBox = styled(Box)`
   margin-top: 2.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  h3 {
+    margin-top: 2rem;
+    font-size: 4rem;
+  }
+
+  ${media.lessThan('small')`
+    h3 {
+      line-height: 5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+
+  `}
+`;
+
+export const SpaceBetween = styled.div`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 `;

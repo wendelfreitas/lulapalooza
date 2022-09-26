@@ -9,7 +9,8 @@ import * as hotelJson from '../../../public/hotel.json';
 import * as merchJson from '../../../public/merch.json';
 
 import * as S from './styles';
-import { Footer } from 'components/Footer';
+import { Footer } from '../../components/Footer';
+import { Button } from '../../components/Button';
 
 export const Content = () => {
   const defaultOptions = {
@@ -85,7 +86,6 @@ export const Content = () => {
         <S.Explanation>
           CASO FOR DORMIR NA CHÁCARA, LEMBRE-SE DE AVISAR!
         </S.Explanation>
-
         <S.BoxWrapper>
           <S.PinkBox color='#ff40b4' size='48.5%'>
             <ImportantBalloon />
@@ -107,6 +107,7 @@ export const Content = () => {
             </p>
           </S.PurpleBox>
         </S.BoxWrapper>
+
         <S.YellowBox color='#ffcd00' size='100%'>
           <WarningBalloon />
           <b>CONHEÇA NOSSAS ATRAÇÕES</b>
@@ -123,54 +124,51 @@ export const Content = () => {
           title='MOISES PAULINO'
           href='https://www.instagram.com/moisespaulinooficial/'
         />
-        <CardLink
-          title='COMO CHEGAR/MAPA'
-          href='https://www.google.com.br/maps/place/Alameda+Tucunar%C3%A9s,+941+-+Distrito+Industrial+Marcus+Vin%C3%ADcius+Feliz+Machado,+Bauru+-+SP,+17039-800/@-22.337165,-48.9551027,17z/data=!4m5!3m4!1s0x94bf59573e43acdf:0x22a44525709ce905!8m2!3d-22.3384055!4d-48.9520021'
-        />
 
         <S.BoxWrapper>
           <S.PinkBox color='#ff40b4' size='48.5%'>
-            <Lottie options={lottieSalsage} height='30rem' width='30rem' />
-            <p>
-              Vamos realizar a doação de caixas de BIS para as crianças da
-              AELESAB
-            </p>
-            <b>
-              PORÉM SE VOCÊ QUISER NOS PRESENTEAR COM UM PIX, É SEMPRE
-              BEM-VINDO.
-            </b>
+            <S.SpaceBetween>
+              <Lottie options={lottieSalsage} height='25rem' width='25rem' />
+              <h3>MAPA</h3>
+              <Button
+                title='Como chegar'
+                color='black'
+                link='https://www.google.com.br/maps/place/Alameda+Tucunar%C3%A9s,+941+-+Distrito+Industrial+Marcus+Vin%C3%ADcius+Feliz+Machado,+Bauru+-+SP,+17039-800/@-22.337165,-48.9551027,17z/data=!4m5!3m4!1s0x94bf59573e43acdf:0x22a44525709ce905!8m2!3d-22.3384055!4d-48.9520021'
+              />
+            </S.SpaceBetween>
           </S.PinkBox>
-          <S.PurpleBox color='#ff40b4' size='48.5%'>
-            <Lottie options={lottieDisc} height='30rem' width='30rem' />
-            <h3>TIRE MUITAS FOTOS</h3>
-            <p>
-              Marque a gente no instagram e use #lulapalooza e a
-              #guiaebiatwenties
-            </p>
-          </S.PurpleBox>
+          <S.PinkBox color='#ff40b4' size='48.5%'>
+            <S.SpaceBetween>
+              <Lottie options={lottieDisc} height='25rem' width='25rem' />
+              <h3>PLAYLIST OFICIAL</h3>
+              <Button
+                title='Link'
+                color='black'
+                link='https://open.spotify.com/playlist/7woOqg6YWkQJCaFXqAA5wP?si=080620e1d4164ab4'
+              />
+            </S.SpaceBetween>
+          </S.PinkBox>
         </S.BoxWrapper>
+
         <S.BlackBox color='black' size='100%'>
-          <Lottie options={lottieNight} height='30rem' width='30rem' />
+          <S.SpaceBetween>
+            <Lottie options={lottieNight} height='30rem' width='30rem' />
+            <h3>CONFIRME SUA PRESENÇA</h3>
+            <Button
+              title='CONFIRME AQUI'
+              color='white'
+              link='https://api.whatsapp.com/send/?phone=552114981038016&app_absent=0'
+            />
+          </S.SpaceBetween>
         </S.BlackBox>
         <S.BoxWrapper>
           <S.PurpleBox color='#7118d7' size='48.5%'>
             <Lottie options={lottieMerch} height='30rem' width='30rem' />
-            <p>
-              Vamos realizar a doação de caixas de BIS para as crianças da
-              AELESAB
-            </p>
-            <b>
-              PORÉM SE VOCÊ QUISER NOS PRESENTEAR COM UM PIX, É SEMPRE
-              BEM-VINDO.
-            </b>
+            <h4>KARAOKE CONFIRMADO</h4>
           </S.PurpleBox>
           <S.PurpleBox color='#7118d7' size='48.5%'>
             <Lottie options={lottieHotel} height='30rem' width='30rem' />
-            <h3>TIRE MUITAS FOTOS</h3>
-            <p>
-              Marque a gente no instagram e use #lulapalooza e a
-              #guiaebiatwenties
-            </p>
+            <h3>PISCINA LIBERADA</h3>
           </S.PurpleBox>
         </S.BoxWrapper>
       </S.Container>

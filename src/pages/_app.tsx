@@ -13,6 +13,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <ThemeProvider theme={lightTheme}>
+      <title>Lulapalooza - Oct 1-2, Chacára, Bauru</title>
+
       <Component {...pageProps} />
       <GlobalStyles />
     </ThemeProvider>

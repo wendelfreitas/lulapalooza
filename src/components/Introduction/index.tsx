@@ -22,7 +22,7 @@ export const Introduction = () => {
         <div>
           <Lottie options={defaultOptions} />
           <S.LogoContainer>
-            <Image src='/images/lulapalooza.png' width={750} height={230} />
+            <img src='/images/lulapalooza.png' />
           </S.LogoContainer>
         </div>
       </S.Container>

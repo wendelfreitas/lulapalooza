@@ -133,7 +133,7 @@ export const Content = () => {
               <Button
                 title='Como chegar'
                 color='black'
-                link='https://www.google.com.br/maps/place/Alameda+Tucunar%C3%A9s,+941+-+Distrito+Industrial+Marcus+Vin%C3%ADcius+Feliz+Machado,+Bauru+-+SP,+17039-800/@-22.337165,-48.9551027,17z/data=!4m5!3m4!1s0x94bf59573e43acdf:0x22a44525709ce905!8m2!3d-22.3384055!4d-48.9520021'
+                link='https://i.imgur.com/y7DUfNq.png'
               />
             </S.SpaceBetween>
           </S.PinkBox>
